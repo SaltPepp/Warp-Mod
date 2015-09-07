@@ -14,7 +14,7 @@ using Sandbox.ModAPI.Interfaces;
 
 namespace Warp
 {
-    public class WarpMod : MyGameLogicComponent
+    public class WarpMod
     {
         public void onPlayerJoin()
         {
@@ -50,11 +50,7 @@ namespace Warp
             
             return true;
         }
-
-        public override MyObjectBuilder_EntityBase GetObjectBuilder(bool copy = false)
-        {
-            throw new NotImplementedException();
-        }
+    
     }
 
     public class WarpAPI : IWarpAPI
